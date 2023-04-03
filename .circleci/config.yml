@@ -33,7 +33,7 @@ jobs:
       tag: 18.15.0
     steps:
       - build
-   
+
   deploy-develop:
     executor:
       name: node/default
@@ -57,8 +57,8 @@ jobs:
             - '4b:ba:77:f1:6b:7f:a0:69:db:b2:5d:48:0a:f7:f7:83'
       - run:
           name: Deploy to gh-pages branch
-          command: gh-pages --dotfiles --dist out --message \'[skip ci] Auto-generated updates\'
-       
+          command: gh-pages --dotfiles --dist out --message '[skip ci] Auto-generated updates'
+
 workflows:
   # Below is the definition of your workflow.
   # Inside the workflow, you provide the jobs you want to run.
